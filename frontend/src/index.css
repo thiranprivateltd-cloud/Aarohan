@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FDF6EC;
+    color: #1A1A1A;
+    font-family: 'Lexend', 'Nunito', sans-serif;
+  }
+}
+
+.font-size-sm {
+  font-size: 87.5%;
+}
+
+.font-size-md {
+  font-size: 100%;
+}
+
+.font-size-lg {
+  font-size: 112.5%;
+}
+
+.high-contrast {
+  filter: contrast(125%) brightness(95%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
